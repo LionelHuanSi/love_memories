@@ -63,7 +63,7 @@ export default async function HomePage() {
   // 5. Couple names display
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const themeData = (space?.theme as any) || {};
-  const coupleNames = themeData.coupleNames || 'Leo Messi ♡ Football';
+  const coupleNames = themeData.coupleNames || 'Minh ♡ Lan';
   const musicUrl = themeData.musicUrl || null;
 
   return (

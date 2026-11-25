@@ -2,7 +2,7 @@
 
 Website lưu giữ kỷ niệm dưới dạng **thiên hà 3D** và **dòng thời gian**. Mỗi kỷ niệm là một ngôi sao: có tiêu đề, ngày, địa điểm và bộ ảnh. Khách xem trang công khai không cần đăng nhập; chủ không gian (và tối đa một người cùng chỉnh sửa) quản lý nội dung trong trang **Studio**.
 
-Dữ liệu demo đi kèm repo là các khoảnh khắc trong sự nghiệp của **Lionel Messi**.
+Repo kèm sẵn **dữ liệu mẫu** của một cặp đôi hư cấu (Minh ♡ Lan) để chạy thử ngay.
 
 ## 📸 Ảnh ứng dụng
 
@@ -54,7 +54,7 @@ Mở <http://localhost:3000>.
 
 | Tài khoản | Mật khẩu |
 |---|---|
-| `demo` | `messi10` |
+| `demo` | `demo1234` |
 
 > Tài khoản này chỉ tồn tại trong `data/local_store.json` để thử nghiệm local. Muốn đổi, sửa trực tiếp mục `users` trong file đó.
 
@@ -72,7 +72,7 @@ rm -rf public/uploads
    1. `supabase/migrations/20261013000001_initial_schema.sql` — bảng, enum, trigger giới hạn 2 thành viên
    2. `supabase/migrations/20261013000002_rls_policies.sql` — Row Level Security, hàm nhận lời mời
    3. `supabase/migrations/20261013000003_storage_policies.sql` — bucket `memories-media` và policy
-   4. *(tuỳ chọn)* `supabase/seed.sql` — nạp dữ liệu demo Messi
+   4. *(tuỳ chọn)* `supabase/seed.sql` — nạp dữ liệu mẫu
 3. Tạo `.env.local` từ mẫu và điền thông tin trong **Project Settings → API**:
 
    ```env
@@ -132,9 +132,9 @@ src/
   middleware.ts         # Bảo vệ /studio
 supabase/
   migrations/           # Schema, RLS, storage policy
-  seed.sql              # Dữ liệu demo Messi cho Supabase
+  seed.sql              # Dữ liệu mẫu cho Supabase
 data/local_store.json   # "Database" của chế độ local mock
-public/demo/messi/      # Ảnh demo
+public/demo/couple/     # Ảnh mẫu
 scripts/bootstrap.mjs   # Tạo owner đầu tiên trên Supabase
 tests/                  # Test Vitest
 ```

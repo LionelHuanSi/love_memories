@@ -22,7 +22,7 @@ export function readStore(): LocalStoreData {
     console.error('Error reading local_store.json:', err);
   }
   return {
-    users: [{ id: 'u-demo-001', email: 'demo@universe.love', username: 'demo', password: 'messi10' }],
+    users: [{ id: 'u-demo-001', email: 'demo@universe.love', username: 'demo', password: 'demo1234' }],
     spaces: [
       {
         id: 'a0000000-0000-0000-0000-000000000001',

@@ -604,7 +604,7 @@ export default function CosmicGalaxy3D({
   tagline = 'Một vũ trụ nhỏ, lưu giữ những vì sao ký ức của riêng chúng mình',
   daysTogether = null,
   relationshipStartDate = null,
-  coupleNames = 'Leo Messi ♡ Football',
+  coupleNames = 'Minh ♡ Lan',
   isMember = true,
   musicUrl = null,
   config = {},
